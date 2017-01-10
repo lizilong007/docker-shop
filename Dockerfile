@@ -20,10 +20,10 @@ RUN sudo yum install -y \
     sudo rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-6 && \
     sudo rpm -ivh http://rpms.famillecollet.com/enterprise/remi-release-6.rpm && \
     sudo rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-remi && \
-    sudo curl --silent --location https://rpm.nodesource.com/setup_5.x | bash - && \
+    sudo curl --silent --location https://rpm.nodesource.com/setup_5.x | sudo bash - && \
     sudo yum -y install nodejs && \
-    sudo npm install -g polymer-cli --registry=https://registry.npm.taobao.org && \
-    sudo npm install -g bower --registry=https://registry.npm.taobao.org
+    npm install -g polymer-cli --registry=https://registry.npm.taobao.org && \
+    npm install -g bower --registry=https://registry.npm.taobao.org
 
 
 
