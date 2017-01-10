@@ -16,14 +16,14 @@ RUN sudo yum install -y \
     gcc+ \
     gcc-c++ \
     git && \
-    rpm -ivh http://download.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm && \
-    rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-6 && \
-    rpm -ivh http://rpms.famillecollet.com/enterprise/remi-release-6.rpm && \
-    rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-remi && \
-    curl --silent --location https://rpm.nodesource.com/setup_5.x | bash - && \
+    sudo rpm -ivh http://download.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm && \
+    sudo rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-6 && \
+    sudo rpm -ivh http://rpms.famillecollet.com/enterprise/remi-release-6.rpm && \
+    sudo rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-remi && \
+    sudo curl --silent --location https://rpm.nodesource.com/setup_5.x | bash - && \
     sudo yum -y install nodejs && \
-    npm install -g polymer-cli --registry=https://registry.npm.taobao.org && \
-    npm install -g bower --registry=https://registry.npm.taobao.org
+    sudo npm install -g polymer-cli --registry=https://registry.npm.taobao.org && \
+    sudo npm install -g bower --registry=https://registry.npm.taobao.org
 
 
 
