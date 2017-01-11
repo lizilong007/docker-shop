@@ -22,8 +22,8 @@ RUN sudo yum install -y \
     sudo rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-remi && \
     sudo curl --silent --location https://rpm.nodesource.com/setup_5.x | sudo bash - && \
     sudo yum -y install nodejs && \
-    npm install -g polymer-cli && \
-    npm install -g bower
+    sudo npm install -g polymer-cli && \
+    sudo npm install -g bower
 
 
 
