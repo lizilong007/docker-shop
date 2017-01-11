@@ -32,7 +32,7 @@ EXPOSE 80
 
 # start-up nginx and fpm and ssh
 CMD sudo mkdir -p /dockerdata/www/shop-1/shop && \
-    sudo cd /dockerdata/www/shop-1/shop/ && \
+    cd /dockerdata/www/shop-1/shop/ && \
     sudo polymer serve --port 80
 
 
