@@ -42,4 +42,11 @@ ADD config/nginx.conf /etc/nginx/nginx.conf
 CMD sudo service nginx start && \
     sudo tail -f /etc/nginx/logs/host.access.log
 
+# mkdir shop
+# cd shop
+# sudo polymer init shop
+# sudo git clone https://github.com/lizilong007/shop-1 shop
+# cd shop
+# sudo bower install --allow-root
+
 
