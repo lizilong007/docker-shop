@@ -40,6 +40,6 @@ ADD config/nginx.conf /etc/nginx/nginx.conf
 #     sudo polymer serve --port 80
 
 CMD sudo service nginx start && \
-    sudo tail -f logs/host.access.log
+    sudo tail -f /etc/nginx/logs/host.access.log
 
 
